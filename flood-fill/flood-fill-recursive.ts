@@ -1,7 +1,7 @@
 type Matrix = number[][];
 
 // const directions: [number, number][] = [
-const directions: Matrix = [
+const directions: [number, number][] = [
   [1, 0], // down
   [-1, 0], // up
   [0, 1], // right
