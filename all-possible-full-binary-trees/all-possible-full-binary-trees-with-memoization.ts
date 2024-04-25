@@ -24,7 +24,7 @@ class TreeNode {
  }
 }
 
-function treeNodeToArray(node: TreeNode | null): any[] {
+function treeNodeToArray(node: TreeNode | null): (number | null)[] {
     if (node === null) return [null];
     return [node.val, ...treeNodeToArray(node.left), ...treeNodeToArray(node.right)];
 }
