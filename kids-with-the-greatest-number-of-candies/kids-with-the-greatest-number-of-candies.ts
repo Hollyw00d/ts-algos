@@ -4,7 +4,9 @@ https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/descripti
 
 ## Starting array and extra candies
 */
-const arr: Array<number> = [2, 3, 5, 1, 3];
+const arr: number[] = [2, 3, 5, 1, 3];
+// Alternative:
+// const arr: Array<number> = [2, 3, 5, 1, 3];
 const extraCandies: number = 3;
 
 /**
