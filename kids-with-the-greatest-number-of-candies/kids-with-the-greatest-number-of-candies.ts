@@ -69,3 +69,13 @@ function kidsWithCandies3(candies: number[], extraCandies: number): boolean[] {
 }
 
 console.log(kidsWithCandies3(arr, extraCandies));
+
+function kidsWithCandies4(candies: number[], extraCandies: number): boolean[] {
+  const maxCandies = candies.reduce((result, candy) => {
+    return Math.max(result, candy)
+  }, 0);
+
+  return candies.map(candy => (candy + extraCandies) >= maxCandies);
+}
+
+console.log(kidsWithCandies4(arr, extraCandies));
