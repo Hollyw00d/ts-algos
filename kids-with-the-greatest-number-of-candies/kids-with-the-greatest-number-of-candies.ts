@@ -70,6 +70,13 @@ function kidsWithCandies3(candies: number[], extraCandies: number): boolean[] {
 
 console.log(kidsWithCandies3(arr, extraCandies));
 
+/**
+## Big O Notion for Algo Below
+- Time complexity: O(n)
+  - Details: Because array uses `map` method
+- Space complexity: O(n)
+  - Details: Because array uses `map` method
+*/
 function kidsWithCandies4(candies: number[], extraCandies: number): boolean[] {
   const maxCandies = candies.reduce((result, candy) => {
     return Math.max(result, candy)
